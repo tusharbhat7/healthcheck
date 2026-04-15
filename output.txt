@@ -1,0 +1,191 @@
+Starting health check...
+
+Installing Apache and redis
+Hit:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+All packages are up to date.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1t64 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap libaprutil1t64 libatomic1 libjemalloc2 liblua5.4-0 liblzf1
+  redis-tools ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  ruby-redis
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1t64
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libaprutil1t64 libatomic1
+  libjemalloc2 liblua5.4-0 liblzf1 redis-server redis-tools ssl-cert
+0 upgraded, 15 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3583 kB of archives.
+After this operation, 15.7 MB of additional disk space will be used.
+Get:1 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libapr1t64 amd64 1.7.2-3.1ubuntu0.1 [108 kB]
+Get:2 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1t64 amd64 1.6.3-1.1ubuntu7 [91.9 kB]
+Get:3 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.3-1.1ubuntu7 [11.2 kB]
+Get:4 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libaprutil1-ldap amd64 1.6.3-1.1ubuntu7 [9116 B]
+Get:5 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 liblua5.4-0 amd64 5.4.6-3build2 [166 kB]
+Get:6 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-bin amd64 2.4.58-1ubuntu8.11 [1335 kB]
+Get:7 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-data all 2.4.58-1ubuntu8.11 [163 kB]
+Get:8 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2-utils amd64 2.4.58-1ubuntu8.11 [98.2 kB]
+Get:9 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 apache2 amd64 2.4.58-1ubuntu8.11 [90.2 kB]
+Get:10 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libatomic1 amd64 14.2.0-4ubuntu2~24.04.1 [10.5 kB]
+Get:11 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 libjemalloc2 amd64 5.3.0-2build1 [256 kB]
+Get:12 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 liblzf1 amd64 3.6-4 [7624 B]
+Get:13 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 redis-tools amd64 5:7.0.15-1ubuntu0.24.04.4 [1166 kB]
+Get:14 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 redis-server amd64 5:7.0.15-1ubuntu0.24.04.4 [51.7 kB]
+Get:15 http://ap-south-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 ssl-cert all 1.1.2ubuntu1 [17.8 kB]
+Preconfiguring packages ...
+Fetched 3583 kB in 0s (13.4 MB/s)
+Selecting previously unselected package libapr1t64:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 104814 files and directories currently installed.)
+Preparing to unpack .../00-libapr1t64_1.7.2-3.1ubuntu0.1_amd64.deb ...
+Unpacking libapr1t64:amd64 (1.7.2-3.1ubuntu0.1) ...
+Selecting previously unselected package libaprutil1t64:amd64.
+Preparing to unpack .../01-libaprutil1t64_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../02-libaprutil1-dbd-sqlite3_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../03-libaprutil1-ldap_1.6.3-1.1ubuntu7_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Selecting previously unselected package liblua5.4-0:amd64.
+Preparing to unpack .../04-liblua5.4-0_5.4.6-3build2_amd64.deb ...
+Unpacking liblua5.4-0:amd64 (5.4.6-3build2) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../05-apache2-bin_2.4.58-1ubuntu8.11_amd64.deb ...
+Unpacking apache2-bin (2.4.58-1ubuntu8.11) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../06-apache2-data_2.4.58-1ubuntu8.11_all.deb ...
+Unpacking apache2-data (2.4.58-1ubuntu8.11) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../07-apache2-utils_2.4.58-1ubuntu8.11_amd64.deb ...
+Unpacking apache2-utils (2.4.58-1ubuntu8.11) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../08-apache2_2.4.58-1ubuntu8.11_amd64.deb ...
+Unpacking apache2 (2.4.58-1ubuntu8.11) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../09-libatomic1_14.2.0-4ubuntu2~24.04.1_amd64.deb ...
+Unpacking libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Selecting previously unselected package libjemalloc2:amd64.
+Preparing to unpack .../10-libjemalloc2_5.3.0-2build1_amd64.deb ...
+Unpacking libjemalloc2:amd64 (5.3.0-2build1) ...
+Selecting previously unselected package liblzf1:amd64.
+Preparing to unpack .../11-liblzf1_3.6-4_amd64.deb ...
+Unpacking liblzf1:amd64 (3.6-4) ...
+Selecting previously unselected package redis-tools.
+Preparing to unpack .../12-redis-tools_5%3a7.0.15-1ubuntu0.24.04.4_amd64.deb ...
+Unpacking redis-tools (5:7.0.15-1ubuntu0.24.04.4) ...
+Selecting previously unselected package redis-server.
+Preparing to unpack .../13-redis-server_5%3a7.0.15-1ubuntu0.24.04.4_amd64.deb ...
+Unpacking redis-server (5:7.0.15-1ubuntu0.24.04.4) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../14-ssl-cert_1.1.2ubuntu1_all.deb ...
+Unpacking ssl-cert (1.1.2ubuntu1) ...
+Setting up libjemalloc2:amd64 (5.3.0-2build1) ...
+Setting up ssl-cert (1.1.2ubuntu1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/ssl-cert.service → /usr/lib/systemd/system/ssl-cert.service.
+Setting up liblzf1:amd64 (3.6-4) ...
+Setting up libatomic1:amd64 (14.2.0-4ubuntu2~24.04.1) ...
+Setting up libapr1t64:amd64 (1.7.2-3.1ubuntu0.1) ...
+Setting up liblua5.4-0:amd64 (5.4.6-3build2) ...
+Setting up apache2-data (2.4.58-1ubuntu8.11) ...
+Setting up libaprutil1t64:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-ldap:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.3-1.1ubuntu7) ...
+Setting up redis-tools (5:7.0.15-1ubuntu0.24.04.4) ...
+Setting up apache2-utils (2.4.58-1ubuntu8.11) ...
+Setting up apache2-bin (2.4.58-1ubuntu8.11) ...
+Setting up redis-server (5:7.0.15-1ubuntu0.24.04.4) ...
+Created symlink /etc/systemd/system/redis.service → /usr/lib/systemd/system/redis-server.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/redis-server.service → /usr/lib/systemd/system/redis-server.service.
+Setting up apache2 (2.4.58-1ubuntu8.11) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /usr/lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /usr/lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for ufw (0.36.2-6) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+Pending kernel upgrade!
+Running kernel version:
+  6.17.0-1007-aws
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.17.0-1010-aws.
+
+Restarting the system to load the new kernel will not be handled automatically, so you should consider rebooting.
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ ubuntu @ session #1: sshd[967]
+ ubuntu @ user manager service: systemd[1010]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+
+Starting services (redis and apache2)
+
+Enabling services on boot
+
+Checking disk space
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.8G  2.3G  4.5G  34% /
+tmpfs            456M     0  456M   0% /dev/shm
+tmpfs            183M  908K  182M   1% /run
+tmpfs            5.0M     0  5.0M   0% /run/lock
+efivarfs         128K  3.6K  120K   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p16  881M  162M  657M  20% /boot
+/dev/nvme0n1p15  105M  6.2M   99M   6% /boot/efi
+tmpfs             92M   12K   92M   1% /run/user/1000
+
+Checking memory
+               total        used        free      shared  buff/cache   available
+Mem:           911Mi       406Mi       188Mi       3.1Mi       500Mi       504Mi
+Swap:             0B          0B          0B
+
+Checking cpu count
+2
+
+Checking services status
+Apache status: active
+Redis status: active
+Services are running fine
